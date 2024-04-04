@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Overview</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 2.5em;
+        }
+        .balance-box {
+            border: 2px solid white;
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .balance-label {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .balance-value {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Balance Overview</h1>
+    <div class="balance-box">
+        <div class="balance-label">Available Skibidi Points:</div>
+        <div class="balance-value">
+            <?php
+                $username = $_GET['username'];
+                $points = 100;
+                if ($username === "zain") {
+                    $points = 100;
+                } elseif ($username === "ayman") {
+                    $points = 100;
+                } elseif ($username === "ayub") {
+                    $points = 100;
+                }
+                echo $points;
+            ?>
+        </div>
+    </div>
+</body>
+</html>
